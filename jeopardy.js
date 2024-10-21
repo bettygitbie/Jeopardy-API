@@ -1,22 +1,4 @@
-// categories is the main data structure for the app; it looks like this:
 
-//  [
-//    { title: "Math",
-//      clues: [
-//        {question: "2+2", answer: 4, showing: null},
-//        {question: "1+1", answer: 2, showing: null}
-//        ...
-//      ],
-//    },
-//    { title: "Literature",
-//      clues: [
-//        {question: "Hamlet Author", answer: "Shakespeare", showing: null},
-//        {question: "Bell Jar Author", answer: "Plath", showing: null},
-//        ...
-//      ],
-//    },
-//    ...
-//  ]
 let startBtn = document.getElementById("start-btn");
 let gameTable = document.querySelector(".gametable");
 const questionBtn = document.querySelector(".questions");
