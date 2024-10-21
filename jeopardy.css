@@ -1,0 +1,120 @@
+/* some colors you may find useful:
+  #115ff4
+  #060ce9 blue
+  #28a200 green
+  #8d2ab5 purple
+  #74119c
+*/
+body {
+  background-color: #94b7f7;
+  color: White;
+}
+
+#header {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 30px;
+}
+
+#start-btn {
+  width: auto;
+  border-radius: 8px;
+  font-size: 24px;
+  border: 1px solid lightgray;
+  padding: 7px;
+  background-color: #9333b9;
+  color: white;
+}
+#start-btn:hover {
+  background-color: #9d5eb6;
+}
+
+.questions {
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: rgb(220, 217, 217);
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.gametable {
+  display: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+table {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  border-color: lightskyblue;
+  text-align: center;
+  background-color: #3498db;
+}
+.tbody {
+  border: 1px solid black;
+  display: block;
+}
+
+tr th {
+  height: 50px;
+}
+tr td {
+  height: 150px;
+}
+td {
+  width: 150px;
+}
+/*
+.loader {
+  margin-left: auto;
+  margin-right: auto;
+  border: 16px solid #f3f3f3; 
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+} */
+
+/* HTML: <div class="loader"></div> */
+/* HTML: <div class="loader"></div> */
+/* HTML: <div class="loader"></div> */
+.loader {
+  --d: 22px;
+  width: 10px;
+  height: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  color: #3498db;
+  box-shadow: calc(1 * var(--d)) calc(0 * var(--d)) 0 0,
+    calc(0.707 * var(--d)) calc(0.707 * var(--d)) 0 1px,
+    calc(0 * var(--d)) calc(1 * var(--d)) 0 2px,
+    calc(-0.707 * var(--d)) calc(0.707 * var(--d)) 0 3px,
+    calc(-1 * var(--d)) calc(0 * var(--d)) 0 4px,
+    calc(-0.707 * var(--d)) calc(-0.707 * var(--d)) 0 5px,
+    calc(0 * var(--d)) calc(-1 * var(--d)) 0 6px;
+  animation: l27 1s infinite steps(8);
+}
+@keyframes l27 {
+  100% {
+    transform: rotate(1turn);
+  }
+}
